@@ -22,23 +22,24 @@ for (let i = imgStart; i <= imgStart + 7; i++) {
   images.push(`https://picsum.photos/seed/${i}/${dimension}/${dimension}`);
 }
 
-let cards = [...images, ...images];
+cards = [...images, ...images];
 
-
+/*
 function shuffle(array) {
   for (let i = array.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     [array[i], array[j]] = [array[j], array[i]]; // On échange les deux places
-    /*cette syntaxe évite de passer obligatoirement par une variable temporaire*/
+  
+  }
+}*/
+
+function shuffle(array) {
+  for (let i = 0; i < array.length; i++) {
+    const j = Math.floor(Math.random() * (i + 1));
+    let temp = array[i];
+    array[i] = array[j];
+    array[j] = temp;
   }
 }
 
-/*function shuffle1(array){
-  for (let i = 0; i < array.length; i++) {
-  const j = Math.floor(Math.random() * (i + 1));
-
-
-  
-  }
-} */
 
