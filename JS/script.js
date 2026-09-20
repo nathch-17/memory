@@ -24,6 +24,8 @@ for (let i = imgStart; i <= imgStart + 7; i++) {
 
 cards = [...images, ...images];
 
+console.log(cards);
+
 /*
 function shuffle(array) {
   for (let i = array.length - 1; i > 0; i--) {
@@ -40,6 +42,26 @@ function shuffle(array) {
     array[i] = array[j];
     array[j] = temp;
   }
+}
+
+function initGame() {
+  shuffle(cards);
+  cards.forEach(imgUrl => {
+    const card = document.createElement("div");
+    card.classList("card");
+    card.dataset.value = imgUrl;
+
+    card.setAttribute("role", "button");
+    card.setAttribute("tabindex", "0");
+
+    board.appendChild(card);
+
+
+
+
+  });
+
+
 }
 
 
