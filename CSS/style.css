@@ -1,0 +1,26 @@
+.card {
+  display: flex;
+  width: 150px;
+  height: 150px;
+  background-color: #ccc;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+#game-board {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 650px;
+  margin: 20px auto;
+}

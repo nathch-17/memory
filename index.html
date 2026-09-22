@@ -4,13 +4,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="CSS/style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
   <title>Memory</title>
 </head>
 
 <body>
-  <script src="app.js"></script>
+  <h1>Memory</h1>
+  <div id="stats" style="margin-bottom: 10px; font-weight: bold;">
+    <span id="moves">Coups : 0</span> | 
+    <span id="timer">Temps : 00:00</span>
+  </div>
+  <div id="result" style="color: green; font-size: 1.2em; margin-bottom: 10px;"></div>
+  <div id="game-board"></div>
+  <button type="button" id="restart-btn" style="display: none;">Restart</button>
+  <script src="JS/script.js"></script>
 </body>
 
 </html>
