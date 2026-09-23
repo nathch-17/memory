@@ -21,4 +21,4 @@ Aucune installation ou compilation n'est requise. Les technologies utilisées so
 
 1. Clonez le dépôt sur votre machine locale :
    ```bash
-   git clone <https://github.com/nathch-17/memory.git>
+   git clone https://github.com/nathch-17/memory.git
