@@ -59,7 +59,7 @@ function initGame() {
 
   shuffle(cards);
   cards.forEach(imgUrl => {
-    const card = document.createElement("div");
+    const card = document.createElement("article");
     card.classList.add("card");
     card.dataset.value = imgUrl;
 
